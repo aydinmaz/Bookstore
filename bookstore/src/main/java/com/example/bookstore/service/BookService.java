@@ -41,8 +41,9 @@ public class BookService {
 			if (saved)
 				{books = (List<Book>) bookrepo.findAll();
 				return books;}
+			return null;
 		}
-		return null;
+		return books;
 	}
 
 	public boolean savebooksfromExcel(List<Book> books) throws IOException {
